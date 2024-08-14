@@ -396,7 +396,7 @@ img{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
 
     .header {
         display: flex;
@@ -496,12 +496,12 @@ img{
     }
 
     .swiper {
-        height: 250px; /* Уменьшаем высоту для мобильных устройств */
+        height: 50%; /* Уменьшаем высоту для мобильных устройств */
     }
     
     .autoplay-progress {
-        width: 36px; /* Уменьшаем размер индикатора */
-        height: 36px;
+        width: 28px;
+        height: 28px;
     }
 
     .our-services {
@@ -545,12 +545,5 @@ img{
         color: #fac564;
     }
     
-}
-
-@media (max-width: 480px) {
-    .swiper {
-        height: 150px; /* Еще больше уменьшаем высоту для маленьких экранов */
-    }
-
 }
 /* CSS Media end */
