@@ -1,0 +1,556 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("./images/bg.png");
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header Style Start */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: whitesmoke;
+}
+
+.header-logo {
+    width: 120px;
+}
+
+.informations {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.time-phone-adresse {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.time, .phone, .adresse {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time p, .phone p, .adresse p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.time i, .phone i, .adresse i {
+    font-size: 24px;
+    color: #fac564;
+}
+
+.order-now p {
+    width: 150px;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border: 1px solid #fac564;
+    background-color: #fac564;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .3s ease;
+}
+
+.order-now p a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+.order-now p:hover {
+    background-color: transparent;
+    border: 1px solid #fac564;
+}
+
+/* Header Style End */
+
+/* Navbar Style Start */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0px 80px;
+    background-color: #121618;
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.navbar-items li {
+    list-style: none;
+}
+
+.navbar-items li a.active{
+    color: #fac564;
+}
+
+.navbar-items li a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-items li a:hover {
+    color: #fac564;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 35px;
+    height: 3px;
+    background-color: whitesmoke;
+    transition: all .3s ease;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-media i {
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.social-media i:hover {
+    color: #fac564;
+}
+/* Navbar Style End */
+
+/* Swiper Style Start */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+/* Swiper Style End */
+
+/* Services Start */
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #fac564;
+}
+
+.our-services {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
+.services-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-content-box {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+.services-content-icon-box {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.services-content-icon {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.services-content-head-text {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+}
+
+.services-content-main-text {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+/* Services End */
+
+/* Menu Style Start */
+.menu-buckets{
+    width: 100%;
+}
+
+.menu-burgers {
+    width: 100%;
+}
+
+.menu-wraps {
+    width: 100%;
+}
+
+.tex-mex {
+    width: 100%;
+}
+
+.menu-enfants {
+    width: 100%;
+}
+/* Menu Style end */
+
+/* Livrasion Style Start */
+.livrasion {
+    width: 100%;
+    height: 100%;
+}
+/* Livrasion Style End */
+
+/* Footer Style Start */
+.footer {
+    background-color: transparent;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    width: 200px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-family: "Oswald", "sans-serif";
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #fac564;
+}
+
+.footer-about p {
+    font-size: 14px;
+    font-family: "Poppins", "sans-serif";
+    color: whitesmoke;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.footer-links ul li a {
+    font-family: "Poppins", "sans-serif";
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fac564;
+}
+
+.footer-contact p {
+    font-family: "Poppins", "sans-serif";
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.footer-contact p:nth-child(3) {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.footer-social a:hover {
+    color: #fac564;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fac564;
+    font-size: 14px;
+    margin-top: 40px;
+    color: black;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 500;
+}
+/* Footer Style end */
+
+
+
+@media (max-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 80px;
+    }
+    
+    .informations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .time-phone-adresse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .time, .phone, .adresse {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .time p, .phone p, .adresse p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .time i, .phone i, .adresse i {
+        font-size: 18px;
+        color: #fac564;
+    }
+    
+    .order-now p {
+        width: 120px;
+        text-align: center;
+        padding: 8px 20px;
+        border: none;
+        border: 1px solid #fac564;
+        background-color: #fac564;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: .3s ease;
+    }
+    
+    .order-now p a{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .navbar-items{
+        position: absolute;
+        z-index: 1000;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #121618;
+        gap: 30px;
+        padding: 20px 0;
+        transition: left 0.3s ease;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(1){
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(3){
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .navbar-items.active{
+        left: 0;
+    }
+
+    .swiper {
+        height: 250px; /* Уменьшаем высоту для мобильных устройств */
+    }
+    
+    .autoplay-progress {
+        width: 36px; /* Уменьшаем размер индикатора */
+        height: 36px;
+    }
+
+    .our-services {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: "Oswald", sans-serif;
+    }
+    
+    .services-content {
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        background-color: transparent;
+        padding: 40px 15px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 10px;
+    }
+    
+    .footer-about h3,
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-social h3 {
+        font-family: "Oswald", "sans-serif";
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        color: #fac564;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 150px; /* Еще больше уменьшаем высоту для маленьких экранов */
+    }
+
+}
+/* CSS Media end */
