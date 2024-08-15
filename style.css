@@ -17,7 +17,7 @@ img{
 }
 
 /* Header Style Start */
-.header {
+#header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -274,6 +274,7 @@ img{
 /* Services End */
 
 /* Menu Style Start */
+
 .menu-buckets{
     width: 100%;
 }
@@ -296,14 +297,54 @@ img{
 /* Menu Style end */
 
 /* Livrasion Style Start */
-.livrasion {
+#livrasion {
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #fac564;
 }
+
+.livrasion-icon i {
+    font-size: 60px;
+}
+
+#livrasion h3 {
+    font-size: 32px;
+    margin: 35px 0;
+    font-family: "Oswald", "sans-serif";
+    letter-spacing: 0.5px;
+}
+
+.livrasion-content {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.livrasion-content-box {
+    width: 200px;
+}
+
+.livrasion-content-box h4{
+    font-size: 20px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    font-family: "Oswald", "sans-serif";
+    letter-spacing: 0.5px;
+}
+
+.livrasion-content-box p{
+    text-align: center;
+    font-family: "Poppins", "sans-serif";
+}
+
 /* Livrasion Style End */
 
 /* Footer Style Start */
-.footer {
+#footer {
     background-color: transparent;
     padding: 40px 0;
 }
@@ -362,14 +403,25 @@ img{
     color: #fac564;
 }
 
-.footer-contact p {
+.footer-contact-adresse, .footer-contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-contact-adresse i, .footer-contact-phone i {
+    color: #fac564;
+    font-size: 18px;
+}
+
+.footer-contact-adresse p, .footer-contact-phone p {
     font-family: "Poppins", "sans-serif";
     font-size: 14px;
     color: whitesmoke;
 }
 
-.footer-contact p:nth-child(3) {
-    margin: 10px 0;
+.footer-contact-adresse p:nth-child(2) {
+    margin-top: 10px;
 }
 
 .footer-social a {
@@ -396,9 +448,9 @@ img{
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 
-    .header {
+    #header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -499,7 +551,7 @@ img{
         height: 50%; /* Уменьшаем высоту для мобильных устройств */
     }
     
-    .autoplay-progress {
+    .autoplay-progresss {
         width: 28px;
         height: 28px;
     }
@@ -520,9 +572,17 @@ img{
         padding-bottom: 20px;
     }
 
-    .footer {
+    .livrasion-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #footer {
         background-color: transparent;
-        padding: 40px 15px;
+        padding: 40px 0;
     }
     
     .footer-container {
@@ -545,5 +605,16 @@ img{
         color: #fac564;
     }
     
+    .footer-bottom {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #fac564;
+        font-size: 14px;
+        margin-top: 40px;
+        color: black;
+        font-family: "Poppins", "sans-serif";
+        font-weight: 500;
+    }
 }
 /* CSS Media end */
