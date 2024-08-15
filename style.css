@@ -498,14 +498,19 @@ img{
     .navbar-items.active{
         left: 0;
     }
-
-    .swiper {
-        height: 50%; /* Уменьшаем высоту для мобильных устройств */
-    }
     
-    .autoplay-progresss {
+    .autoplay-progress {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
         width: 28px;
         height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--swiper-theme-color);
     }
 
     .our-services {
