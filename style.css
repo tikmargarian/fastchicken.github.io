@@ -446,7 +446,7 @@ img{
     padding: 10px 0;
     background-color: #fac564;
     font-size: 14px;
-    margin-top: 40px;
+    margin: 40px 0 60px 0;
     color: black;
     font-family: "Poppins", "sans-serif";
     font-weight: 500;
@@ -546,11 +546,6 @@ img{
 
     .navbar-items.active{
         left: 0;
-    }
-
-    .swiper {
-        width: 20%;
-        height: 100%;
     }
     
     .autoplay-progress {
