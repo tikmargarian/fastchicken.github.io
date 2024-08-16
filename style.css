@@ -20,6 +20,32 @@ img{
 .media-informations {
     display: none;
 }
+
+.media-order-now {
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border: 1px solid #fac564;
+    background-color: #fac564;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .3s ease;
+}
+
+.media-order-now a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+
+.media-order-now:hover {
+    background-color: transparent;
+    border: 1px solid #fac564;
+}
+
 /* Media Informations Style Start */
 
 /* Header Style Start */
@@ -145,7 +171,7 @@ img{
     width: 35px;
     height: 3px;
     background-color: whitesmoke;
-    transition: all .3s ease;
+    transition: .3s ease;
 }
 
 .social-media {
@@ -446,7 +472,7 @@ img{
     padding: 10px 0;
     background-color: #fac564;
     font-size: 14px;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 80px 0;
     color: black;
     font-family: "Poppins", "sans-serif";
     font-weight: 500;
@@ -462,10 +488,10 @@ img{
         width: 100%;
         bottom: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         z-index: 1000;
-        padding: 30px;
+        padding: 20px 30px;
         background-color: #FFFFFF;
     }
 
@@ -477,12 +503,12 @@ img{
 
     .media-time i {
         color: #fac564;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .media-time p {
         font-family: "Poppins", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: black !important;
     }
@@ -494,21 +520,39 @@ img{
         background-color: darkgrey;
     }
 
-    .informationss {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
     #header {
-        padding: 10px 30px;
+        padding: 20px 30px;
     }
 
     .header-logo {
-        width: 80px;
+        display: none;
+    }
+
+    .informations {
+        margin: 0;
+    }
+
+    .time {
+        display: none;
+    }
+
+    .time-phone-adresse {
+        gap: 30px;
     }
     
-    .informations {
+    .phone p, .adresse p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: black !important;
+    }
+    
+    .phone i, .adresse i {
+        font-size: 20px;
+        color: #fac564;
+    }
+
+    .order-now {
         display: none;
     }
 
@@ -520,14 +564,14 @@ img{
         position: absolute;
         z-index: 1000;
         left: -100%;
-        top: 80px;
+        top: 75px;
         flex-direction: column;
         width: 100%;
         text-align: center;
         background: #121618;
         gap: 30px;
         padding: 20px 0;
-        transition: left 0.3s ease;
+        transition: 0.3s ease;
     }
 
     .hamburger {
