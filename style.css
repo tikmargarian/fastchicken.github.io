@@ -491,7 +491,7 @@ img{
         justify-content: space-between;
         align-items: center;
         z-index: 1000;
-        padding: 20px 30px;
+        padding: 20px 15px;
         background-color: #FFFFFF;
     }
 
@@ -521,6 +521,9 @@ img{
     }
 
     #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px 30px;
     }
 
@@ -529,8 +532,6 @@ img{
     }
 
     .informations {
-        display: flex;
-        align-items: center;
         margin: 0;
     }
 
