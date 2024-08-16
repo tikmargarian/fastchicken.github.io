@@ -491,7 +491,7 @@ img{
         justify-content: space-between;
         align-items: center;
         z-index: 1000;
-        padding: 20px 15px;
+        padding: 20px;
         background-color: #FFFFFF;
     }
 
@@ -541,9 +541,9 @@ img{
 
     .time-phone-adresse {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
     
     .phone p, .adresse p {
