@@ -605,10 +605,14 @@ img{
         color: var(--swiper-theme-color);
     }
 
+    .services {
+        padding: 20px 0;
+    }
+
     .our-services {
         font-size: 28px;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 5px;
         font-family: "Oswald", sans-serif;
     }
     
