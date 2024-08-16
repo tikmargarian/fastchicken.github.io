@@ -23,7 +23,7 @@ img{
 
 .media-order-now {
     text-align: center;
-    padding: 12px 18px;
+    padding: 12px 20px;
     border: none;
     border: 1px solid #fac564;
     background-color: #fac564;
@@ -479,8 +479,7 @@ img{
 }
 /* Footer Style end */
 
-
-
+/* CSS Media Start */
 @media (max-width: 768px) {
 
     .media-informations {
@@ -503,7 +502,7 @@ img{
 
     .media-time i {
         color: #fac564;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .media-time p {
@@ -537,18 +536,18 @@ img{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
     
     .phone p, .adresse p {
         font-family: "Poppins", sans-serif;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
         color: black !important;
     }
     
     .phone i, .adresse i {
-        font-size: 18px;
+        font-size: 20px;
         color: #fac564;
     }
 
