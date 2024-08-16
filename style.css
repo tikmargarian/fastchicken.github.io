@@ -23,7 +23,7 @@ img{
 
 .media-order-now {
     text-align: center;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border: none;
     border: 1px solid #fac564;
     background-color: #fac564;
@@ -37,7 +37,7 @@ img{
     font-weight: 500;
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -521,14 +521,16 @@ img{
     }
 
     #header {
-        padding: 20px 30px;
+        padding: 10px 30px;
     }
 
     .header-logo {
-        display: none;
+        width: 100px;
     }
 
     .informations {
+        display: flex;
+        align-items: center;
         margin: 0;
     }
 
@@ -537,12 +539,15 @@ img{
     }
 
     .time-phone-adresse {
-        gap: 30px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
     }
     
     .phone p, .adresse p {
         font-family: "Poppins", sans-serif;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 500;
         color: black !important;
     }
