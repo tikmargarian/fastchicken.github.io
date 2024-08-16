@@ -436,25 +436,29 @@ img{
     color: #fac564;
 }
 
-.footer-contact-adresse, .footer-contact-phone {
+.footer-contact-adresse, .footer-contact-phone, .footer-contact-email {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.footer-contact-adresse i, .footer-contact-phone i {
+.footer-contact-adresse i, .footer-contact-phone i, .footer-contact-email i {
     color: #fac564;
     font-size: 18px;
 }
 
-.footer-contact-adresse p, .footer-contact-phone p {
+.footer-contact-adresse p, .footer-contact-phone p, .footer-contact-email p {
     font-family: "Poppins", "sans-serif";
     font-size: 14px;
     color: whitesmoke !important;
 }
 
 .footer-contact-adresse p:nth-child(2) {
-    margin-top: 10px;
+    margin: 10px 0 15px 0;
+}
+
+.footer-contact-adresse p:nth-child(2) a {
+    color: whitesmoke;
 }
 
 .footer-social a {
