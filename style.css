@@ -16,6 +16,13 @@ img{
     width: 100%;
 }
 
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* Media Informations Style Start */
 .media-informations {
     display: none;
@@ -85,16 +92,19 @@ img{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: black !important;
+    -webkit-text-fill-color: black;
+    color: black;
 }
 
 .time i, .phone i, .adresse i {
     font-size: 24px;
+    -webkit-text-fill-color: #fac564;
     color: #fac564;
 }
 
 .adresse p a {
-    color: black !important;
+    -webkit-text-fill-color: black;
+    color: black;
 }
 
 .order-now {
@@ -112,6 +122,7 @@ img{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     text-decoration: none;
+    -webkit-text-fill-color: black;
     color: black;
     font-size: 14px;
 }
@@ -134,6 +145,7 @@ img{
     height: 80px;
     padding: 0px 80px;
     background-color: #121618;
+    -webkit-text-fill-color: #121618;
     font-family: "Oswald", sans-serif;
 }
 
@@ -148,6 +160,7 @@ img{
 }
 
 .navbar-items li a.active{
+    -webkit-text-fill-color: #fac564;
     color: #fac564;
 }
 
@@ -155,12 +168,14 @@ img{
     color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
+    -webkit-transition: .3s ease;
     transition: .3s ease;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .navbar-items li a:hover {
+    -webkit-text-fill-color: #fac564;
     color: #fac564;
 }
 
@@ -175,6 +190,7 @@ img{
     width: 35px;
     height: 3px;
     background-color: whitesmoke;
+    -webkit-transition: .3s ease;
     transition: .3s ease;
 }
 
@@ -187,12 +203,14 @@ img{
 .social-media i {
     font-size: 26px;
     color: #fff;
+    -webkit-text-fill-color: #fff;
     cursor: pointer;
     transition: .3s ease;
 }
 
 .social-media i:hover {
     color: #fac564;
+    -webkit-text-fill-color: #fac564;
 }
 /* Navbar Style End */
 
@@ -432,12 +450,14 @@ img{
     font-family: "Poppins", "sans-serif";
     font-size: 15px;
     color: whitesmoke;
+    -webkit-text-fill-color: whitesmoke;
     text-decoration: none;
     transition: .3s;
 }
 
 .footer-links ul li a:hover {
     color: #fac564;
+    -webkit-text-fill-color: #fac564;
 }
 
 .footer-contact-adresse, .footer-contact-phone, .footer-contact-email {
@@ -448,18 +468,21 @@ img{
 
 .footer-contact-phone i, .footer-contact-email i {
     color: #fac564;
+    -webkit-text-fill-color: #fac564;
     font-size: 18px;
 }
 
 .footer-contact-adresse i {
     font-size: 24px;
     color: #fac564;
+    -webkit-text-fill-color: #fac564;
 }
 
 .footer-contact-adresse p, .footer-contact-phone p, .footer-contact-email p {
     font-family: "Poppins", "sans-serif";
     font-size: 14px;
-    color: whitesmoke !important;
+    color: whitesmoke;
+    -webkit-text-fill-color: whitesmoke;
 }
 
 .footer-contact-adresse p:nth-child(2) {
@@ -468,16 +491,19 @@ img{
 
 .footer-contact-adresse p:nth-child(2) a {
     color: whitesmoke;
+    -webkit-text-fill-color: whitesmoke;
 }
 
 .footer-social a {
     margin-right: 10px;
     font-size: 24px;
     color: whitesmoke;
+    -webkit-text-fill-color: whitesmoke;
 }
 
 .footer-social a:hover {
     color: #fac564;
+    -webkit-text-fill-color: #fac564;
 }
 
 .footer-bottom {
@@ -522,7 +548,8 @@ img{
         font-family: "Poppins", sans-serif;
         font-size: 13px;
         font-weight: 500;
-        color: black !important;
+        color: black;
+        -webkit-text-fill-color: black;
     }
 
     #header {
@@ -556,12 +583,14 @@ img{
         font-family: "Poppins", sans-serif;
         font-size: 14px;
         font-weight: 500;
-        color: black !important;
+        color: black;
+        -webkit-text-fill-color: black;
     }
     
     .phone i, .adresse i {
         font-size: 20px;
         color: #fac564;
+        -webkit-text-fill-color: #fac564;
     }
 
     .order-now {
@@ -584,6 +613,7 @@ img{
         gap: 30px;
         padding: 20px 0;
         transition: 0.3s ease;
+        -webkit-transition: .3s ease;
     }
 
     .hamburger {
