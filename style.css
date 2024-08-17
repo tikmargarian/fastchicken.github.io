@@ -524,6 +524,10 @@ img{
         height: 100dvh;
     }
 
+    #app {
+        height: 100dvh;
+    }
+
     .media-informations {
         position: fixed;
         width: 100%;
