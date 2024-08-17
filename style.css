@@ -520,6 +520,10 @@ img{
 /* CSS Media Start */
 @media (max-width: 768px) {
 
+    .body, html {
+        height: 100dvh;
+    }
+
     .media-informations {
         position: fixed;
         width: 100%;
